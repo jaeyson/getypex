@@ -7,13 +7,13 @@
 
 [//]: # "Links"
 [dependabot]: https://github.com/jaeyson/typex
-[actions]: https://github.com/jaeyson/typex/actions
-[linter]: https://github.com/jaeyson/typex/actions
+[actions]: https://github.com/jaeyson/typex/actions/workflows/ci.yml
+[linter]: https://github.com/jaeyson/typex/actions/workflows/linter.yml
 
 [//]: # "Image sources"
 [dependabot badge]: https://badgen.net/dependabot/jaeyson/typex/111643794?icon=dependabot
-[actions badge]: https://github.com/jaeyson/typex/workflows/CI/badge.svg
-[linter badge]: https://github.com/jaeyson/typex/workflows/Lint%20Code%20Base/badge.svg
+[actions badge]: https://github.com/jaeyson/typex/workflows/ci.yml/badge.svg
+[linter badge]: https://github.com/jaeyson/typex/actions/workflows/linter.yml/badge.svg
 
 
 Library for checking types. Similar from `PHP`'s `gettype` or `JavaScript`'s `typeof`. Created this package to better understand how [`Protocol`](https://elixir-lang.org/getting-started/protocols.html) works.
