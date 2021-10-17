@@ -1,4 +1,4 @@
-defprotocol Typex do
+defprotocol Getypex do
   @moduledoc since: "0.1.0"
   @fallback_to_any true
 
@@ -6,39 +6,39 @@ defprotocol Typex do
   def check(term)
 end
 
-defimpl Typex, for: Tuple do
+defimpl Getypex, for: Tuple do
   def check(_tuple), do: "Tuple"
 end
 
-defimpl Typex, for: Integer do
+defimpl Getypex, for: Integer do
   def check(_integer), do: "Integer"
 end
 
-defimpl Typex, for: Float do
+defimpl Getypex, for: Float do
   def check(_float), do: "Float"
 end
 
-defimpl Typex, for: Reference do
+defimpl Getypex, for: Reference do
   def check(_reference), do: "Reference"
 end
 
-defimpl Typex, for: PID do
+defimpl Getypex, for: PID do
   def check(_pid), do: "PID"
 end
 
-defimpl Typex, for: Port do
+defimpl Getypex, for: Port do
   def check(_port), do: "Port"
 end
 
-defimpl Typex, for: Map do
+defimpl Getypex, for: Map do
   def check(_map), do: "Map"
 end
 
-defimpl Typex, for: [Date, Time, DateTime, NaiveDateTime] do
+defimpl Getypex, for: [Date, Time, DateTime, NaiveDateTime] do
   def check(_), do: to_string(@for) |> String.replace("Elixir.", "")
 end
 
-defimpl Typex, for: Atom do
+defimpl Getypex, for: Atom do
   def check(atom) when is_boolean(atom), do: "Atom (Boolean)"
 
   def check(atom) do
@@ -60,7 +60,7 @@ defimpl Typex, for: Atom do
   end
 end
 
-defimpl Typex, for: BitString do
+defimpl Getypex, for: BitString do
   def check(bitstring) do
     cond do
       is_binary(bitstring) and String.printable?(bitstring) -> "String (UTF-8)"
@@ -71,7 +71,7 @@ defimpl Typex, for: BitString do
   end
 end
 
-defimpl Typex, for: List do
+defimpl Getypex, for: List do
   def check(list) do
     cond do
       list == [] -> "List (Empty)"
@@ -83,7 +83,7 @@ defimpl Typex, for: List do
   end
 end
 
-defimpl Typex, for: Function do
+defimpl Getypex, for: Function do
   def check(function) do
     info = Function.info(function)
 
@@ -97,6 +97,6 @@ defimpl Typex, for: Function do
   end
 end
 
-defimpl Typex, for: Any do
+defimpl Getypex, for: Any do
   def check(_struct), do: "Structs"
 end
