@@ -6,9 +6,9 @@ defmodule Typex.MixProject do
 
   def project do
     [
-      app: :typex,
+      app: :getypex,
       version: @version,
-      elixir: "~> 1.4",
+      elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       consolidate_protocols: Mix.env() != :test,
       aliases: aliases(),
@@ -17,7 +17,7 @@ defmodule Typex.MixProject do
         "Library for checking types. Similar from PHP's gettype or JavaScript's typeof.",
       docs: docs(),
       package: package(),
-      name: "Typex",
+      name: "Getypex",
       source_url: @source_url
     ]
   end
@@ -52,7 +52,7 @@ defmodule Typex.MixProject do
       main: "readme",
       source_ref: "v#{@version}",
       source_url: @source_url,
-      canonical: "http://hexdocs.pm/typex",
+      canonical: "http://hexdocs.pm/getypex",
       extras: [
         "README.md",
         "CHANGELOG.md",
@@ -64,7 +64,6 @@ defmodule Typex.MixProject do
   defp package do
     [
       maintainers: ["Jaeyson Anthony Y."],
-      name: "Typex",
       licenses: ["MIT"],
       links: %{
         "Github" => @source_url

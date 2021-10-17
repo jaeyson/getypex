@@ -1,4 +1,4 @@
-# Typex
+# Getypex
 
 [//]: # "Badges"
 [![Dependabot][dependabot badge]][dependabot]
@@ -6,14 +6,14 @@
 [![Super Linter][linter badge]][linter]
 
 [//]: # "Links"
-[dependabot]: https://github.com/jaeyson/typex
-[actions]: https://github.com/jaeyson/typex/actions/workflows/ci.yml
-[linter]: https://github.com/jaeyson/typex/actions/workflows/linter.yml
+[dependabot]: https://github.com/jaeyson/getypex
+[actions]: https://github.com/jaeyson/getypex/actions/workflows/ci.yml
+[linter]: https://github.com/jaeyson/getypex/actions/workflows/linter.yml
 
 [//]: # "Image sources"
-[dependabot badge]: https://badgen.net/dependabot/jaeyson/typex/111643794?icon=dependabot
-[actions badge]: https://github.com/jaeyson/typex/workflows/ci.yml/badge.svg
-[linter badge]: https://github.com/jaeyson/typex/actions/workflows/linter.yml/badge.svg
+[dependabot badge]: https://badgen.net/dependabot/jaeyson/getypex/111643794?icon=dependabot
+[actions badge]: https://github.com/jaeyson/getypex/workflows/ci.yml/badge.svg
+[linter badge]: https://github.com/jaeyson/getypex/actions/workflows/linter.yml/badge.svg
 
 
 Library for checking types. Similar from `PHP`'s `gettype` or `JavaScript`'s `typeof`. Created this package to better understand how [`Protocol`](https://elixir-lang.org/getting-started/protocols.html) works.
@@ -23,24 +23,24 @@ Library for checking types. Similar from `PHP`'s `gettype` or `JavaScript`'s `ty
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `typex` to your list of dependencies in `mix.exs`:
+by adding `getypex` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:typex, "~> 0.1.0"}
+    {:getypex, "~> 0.1.0"}
   ]
 end
 ```
 
-Docs can be found at [https://hexdocs.pm/typex](https://hexdocs.pm/typex).
+Docs can be found at [https://hexdocs.pm/typex](https://hexdocs.pm/getypex).
 
 ## Usage
 
 ```elixir
-iex(1)> Typex.check("hello Typex")
+iex(1)> Getypex.check("hello Getypex")
 "String (UTF-8)"
 
-iex(2)> Typex.check({:ok, "message"})
+iex(2)> Getypex.check({:ok, "message"})
 "Tuple"
 ```
