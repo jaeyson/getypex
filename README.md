@@ -28,7 +28,7 @@ by adding `getypex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:getypex, "~> 0.1.0"}
+    {:getypex, "~> 0.1.1"}
   ]
 end
 ```
