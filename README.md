@@ -33,7 +33,7 @@ def deps do
 end
 ```
 
-Docs can be found at [https://hexdocs.pm/typex](https://hexdocs.pm/getypex).
+Docs can be found at [https://hexdocs.pm/getypex](https://hexdocs.pm/getypex).
 
 ## Usage
 
