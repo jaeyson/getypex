@@ -11,8 +11,8 @@
 [linter]: https://github.com/jaeyson/getypex/actions/workflows/linter.yml
 
 [//]: # "Image sources"
-[dependabot badge]: https://badgen.net/dependabot/jaeyson/getypex/111643794?icon=dependabot
-[actions badge]: https://github.com/jaeyson/getypex/workflows/ci.yml/badge.svg
+[dependabot badge]: https://badgen.net/github/dependabot/jaeyson/getypex
+[actions badge]: https://github.com/jaeyson/getypex/actions/workflows/ci.yml/badge.svg
 [linter badge]: https://github.com/jaeyson/getypex/actions/workflows/linter.yml/badge.svg
 
 
