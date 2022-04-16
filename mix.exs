@@ -1,7 +1,7 @@
 defmodule Typex.MixProject do
   use Mix.Project
 
-  @source_url "https://github.com/jaeyson/typex"
+  @source_url "https://github.com/jaeyson/getypex"
   @version "0.1.1"
 
   def project do
@@ -30,9 +30,9 @@ defmodule Typex.MixProject do
 
   defp deps do
     [
-      {:credo, "~> 1.5.6", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.25.3", only: :dev, runtime: false},
-      {:tzdata, "~> 1.1.0"}
+      {:credo, "~> 1.6.4", only: [:dev, :test], runtime: false},
+      {:ex_doc, "~> 0.28.3", only: :dev, runtime: false},
+      {:tzdata, "~> 1.1.1"}
     ]
   end
 
